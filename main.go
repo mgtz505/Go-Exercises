@@ -28,10 +28,38 @@ func main() {
 	// fmt.Println(s)
 
 	//Exercise 4
-	type magic int
-	var x magic
-	fmt.Println(x)
-	fmt.Printf("%T\n", x)
-	x = 42
-	fmt.Println(x)
+	// type magic int
+	// var x magic
+	// fmt.Println(x)        //Prints the zero value
+	// fmt.Printf("%T\n", x) //Type
+	// x = 42
+	// fmt.Println(x)
+
+	//Exercise 5
+	// var y magic
+	// y := int(x)
+
+	// fmt.Printf("%T\n", y)
+	// fmt.Println(y)
+
+	fmt.Println("Level 2 Exercises")
+
+	//Exercise 1
+	// a := 42
+	// fmt.Printf("%d\t%b\t%#x", a, a, a)
+
+	//Exercise 2
+	// a := (42 == 42)
+	// b := (42 <= 42)
+	// c := (42 >= 46)
+	// d := (0 < 100)
+	// e := (99 > 92)
+	// fmt.Println(a, b, c, d, e)
+
+	//Exercise 3
+	// const (
+	// 	a     = 42
+	// 	b int = 43
+	// )
+	// fmt.Println(a, b)
 }
