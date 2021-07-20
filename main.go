@@ -62,4 +62,26 @@ func main() {
 	// 	b int = 43
 	// )
 	// fmt.Println(a, b)
+
+	//Exercise 4
+	// var x int
+	// x = 32
+	// fmt.Printf("%d\t%b\t%#x\n", x, x, x)
+	// y := x << 1
+	// fmt.Printf("%d\t%b\t%#x\n", y, y, y)
+
+	//Exercise 5
+	// a := `Here is a "raw string literal"`
+	// fmt.Println(a)
+
+	//Exercise 6
+
+	// const (
+	// 	a = 2017 + iota
+	// 	b
+	// 	c
+	// 	d
+	// )
+	// fmt.Println(a, b, c, d)
+
 }
