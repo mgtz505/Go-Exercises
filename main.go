@@ -157,4 +157,14 @@ func main() {
 		fmt.Println(i)
 	}
 	fmt.Printf("%T\n", sl)
+
+	//Exercise 3
+
+	sl2 := sl[1:6]
+	fmt.Println(sl2)
+	sl3 := sl[2:9]
+	fmt.Println(sl3)
+	sl4 := sl[2:len(sl)]
+	fmt.Println(sl4)
+
 }
