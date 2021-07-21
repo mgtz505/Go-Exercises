@@ -84,4 +84,23 @@ func main() {
 	// )
 	// fmt.Println(a, b, c, d)
 
+	fmt.Println("Level 3 Exercises")
+
+	//Exercise 1
+	// 	for i := 1; i <= 10_000; i++ {
+	// 		fmt.Println(i)
+	// 	}
+
+	//Exercise 2
+	// for i := 65; i <= 90; i++ {
+	// 	fmt.Printf("%#U\n", i)
+	// }
+
+	// Exercise 3
+	counter := 0
+	for i := 2021; i > 1994; i-- {
+		fmt.Println(i)
+		counter++
+	}
+	fmt.Println("Marcus is", counter, "years old!")
 }
