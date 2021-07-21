@@ -144,38 +144,42 @@ func main() {
 	fmt.Println("Level 4 Exercises")
 
 	//Exercise 1
-	arr := [5]int{1, 2, 3, 4, 5}
+	// arr := [5]int{1, 2, 3, 4, 5}
 
-	for i, v := range arr {
-		fmt.Println(i, v)
-	}
-	fmt.Printf("%T\n", arr)
+	// for i, v := range arr {
+	// 	fmt.Println(i, v)
+	// }
+	// fmt.Printf("%T\n", arr)
 
 	//Exercise 2
-	sl := []int{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
-	for i := range sl {
-		fmt.Println(i)
-	}
-	fmt.Printf("%T\n", sl)
+	// sl := []int{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
+	// for i := range sl {
+	// 	fmt.Println(i)
+	// }
+	// fmt.Printf("%T\n", sl)
 
 	//Exercise 3
 
-	sl2 := sl[1:6]
-	fmt.Println(sl2)
-	sl3 := sl[2:9]
-	fmt.Println(sl3)
-	sl4 := sl[2:len(sl)]
-	fmt.Println(sl4)
+	// sl2 := sl[1:6]
+	// fmt.Println(sl2)
+	// sl3 := sl[2:9]
+	// fmt.Println(sl3)
+	// sl4 := sl[2:len(sl)]
+	// fmt.Println(sl4)
 
 	//Exercise 4
 
-	x := []int{42, 43, 44, 45, 56, 47, 48, 49, 50, 51}
-	x = append(x, 52)
-	fmt.Println(x)
-	x = append(x, 53, 54, 55)
-	fmt.Println(x)
-	y := []int{56, 57, 58, 59, 60}
-	x = append(x, y...) //Can't forget the ... ellipse
-	fmt.Println(x)
+	// x := []int{42, 43, 44, 45, 56, 47, 48, 49, 50, 51}
+	// x = append(x, 52)
+	// fmt.Println(x)
+	// x = append(x, 53, 54, 55)
+	// fmt.Println(x)
+	// y := []int{56, 57, 58, 59, 60}
+	// x = append(x, y...) //Can't forget the ... ellipse
+	// fmt.Println(x)
 
+	//Exercise 5
+	x := []int{42, 43, 44, 45, 46, 47, 38, 39, 50, 51}
+	x = append(x[:3], 48, 49)
+	fmt.Println(x)
 }
