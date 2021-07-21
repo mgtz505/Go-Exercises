@@ -97,47 +97,64 @@ func main() {
 	// }
 
 	// Exercise 3
-	counter := 0
-	for i := 2021; i > 1994; i-- {
-		fmt.Println(i)
-		counter++
-	}
-	fmt.Println("Marcus is", counter, "years old!")
+	// counter := 0
+	// for i := 2021; i > 1994; i-- {
+	// 	fmt.Println(i)
+	// 	counter++
+	// }
+	// fmt.Println("Marcus is", counter, "years old!")
 
-	count := 0
-	by := 1994
-	for {
-		if by == 2021 {
-			break
-		} else {
-			by++
-			count++
-		}
-	}
-	fmt.Println(count)
+	// count := 0
+	// by := 1994
+	// for {
+	// 	if by == 2021 {
+	// 		break
+	// 	} else {
+	// 		by++
+	// 		count++
+	// 	}
+	// }
+	// fmt.Println(count)
 
 	//Exercise 4
 
-	for i := 10; i <= 100; i++ {
-		if i%4 == 0 {
-			fmt.Println(i)
-		}
-	}
+	// for i := 10; i <= 100; i++ {
+	// 	if i%4 == 0 {
+	// 		fmt.Println(i)
+	// 	}
+	// }
 
 	//Exercise 5
-	switch {
-	case (2 == 2):
-		fmt.Println("2 is 2!")
-	case (3 == 3):
-		fmt.Println("3 is 3!")
-	}
+	// switch {
+	// case (2 == 2):
+	// 	fmt.Println("2 is 2!")
+	// case (3 == 3):
+	// 	fmt.Println("3 is 3!")
+	// }
 
 	//Exercise 6
-	favSport := "swimming"
-	switch favSport {
-	case "skiing":
-		fmt.Println("Skiing")
-	case "swimming":
-		fmt.Println("Glug glug")
+	// 	favSport := "swimming"
+	// 	switch favSport {
+	// 	case "skiing":
+	// 		fmt.Println("Skiing")
+	// 	case "swimming":
+	// 		fmt.Println("Glug glug")
+	// 	}
+
+	fmt.Println("Level 4 Exercises")
+
+	//Exercise 1
+	arr := [5]int{1, 2, 3, 4, 5}
+
+	for i, v := range arr {
+		fmt.Println(i, v)
 	}
+	fmt.Printf("%T\n", arr)
+
+	//Exercise 2
+	sl := []int{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
+	for i := range sl {
+		fmt.Println(i)
+	}
+	fmt.Printf("%T\n", sl)
 }
