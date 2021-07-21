@@ -179,35 +179,36 @@ func main() {
 	// fmt.Println(x)
 
 	//Exercise 5
-	x := []int{42, 43, 44, 45, 46, 47, 38, 39, 50, 51}
-	x = append(x[:3], 48, 49)
-	fmt.Println(x)
+	// x := []int{42, 43, 44, 45, 46, 47, 38, 39, 50, 51}
+	// x = append(x[:3], 48, 49)
+	// fmt.Println(x)
 
 	// Exercise 6
-	y := make([]int, 50, 50)
-	fmt.Println(len(y))
-	fmt.Println(cap(y))
+	// y := make([]int, 50, 50)
+	// fmt.Println(len(y))
+	// fmt.Println(cap(y))
 
 	//Exercise 7
-	james := []string{"James", "Bond"}
-	mission := []string{"Tom", "Cruise"}
-	jamesMission := [][]string{james, mission}
-	fmt.Println(jamesMission)
+	// james := []string{"James", "Bond"}
+	// mission := []string{"Tom", "Cruise"}
+	// jamesMission := [][]string{james, mission}
+	// fmt.Println(jamesMission)
 
-	for n, v := range jamesMission {
-		fmt.Println(n, v)
-		for j, v := range v {
-			fmt.Println(j, v)
-		}
-	}
+	// for n, v := range jamesMission {
+	// 	fmt.Println(n, v)
+	// 	for j, v := range v {
+	// 		fmt.Println(j, v)
+	// 	}
+	// }
 
 	//Exercise 8
-	m := map[string]string{
-		"Joe":  "Schmo",
-		"Jane": "Dough",
-	}
-	fmt.Println(m)
-	for n, v := range m {
-		fmt.Println(n, v)
-	}
+	// m := map[string]string{
+	// 	"Joe":  "Schmo",
+	// 	"Jane": "Dough",
+	// }
+	// fmt.Println(m)
+	// for n, v := range m {
+	// 	fmt.Println(n, v)
+	// }
+
 }
