@@ -103,4 +103,41 @@ func main() {
 		counter++
 	}
 	fmt.Println("Marcus is", counter, "years old!")
+
+	count := 0
+	by := 1994
+	for {
+		if by == 2021 {
+			break
+		} else {
+			by++
+			count++
+		}
+	}
+	fmt.Println(count)
+
+	//Exercise 4
+
+	for i := 10; i <= 100; i++ {
+		if i%4 == 0 {
+			fmt.Println(i)
+		}
+	}
+
+	//Exercise 5
+	switch {
+	case (2 == 2):
+		fmt.Println("2 is 2!")
+	case (3 == 3):
+		fmt.Println("3 is 3!")
+	}
+
+	//Exercise 6
+	favSport := "swimming"
+	switch favSport {
+	case "skiing":
+		fmt.Println("Skiing")
+	case "swimming":
+		fmt.Println("Glug glug")
+	}
 }
