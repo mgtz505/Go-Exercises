@@ -211,4 +211,29 @@ func main() {
 	// 	fmt.Println(n, v)
 	// }
 
+	fmt.Println("Level 5 Exercises")
+
+	//Exercise 1
+	type person struct {
+		firstName       string
+		lastName        string
+		iceCreamFlavors []string
+	}
+	barb := person{
+		firstName:       "Barbara",
+		lastName:        "Grahmm",
+		iceCreamFlavors: []string{"Chocolate", "Lime"},
+	}
+	fmt.Println(barb)
+	rich := person{
+		firstName:       "Richard",
+		lastName:        "Washington",
+		iceCreamFlavors: []string{"Vanilla", "Chocomint"},
+	}
+	fmt.Println(rich)
+
+	//Exercise 2
+	m := map[string]person{
+		barb.firstName: barb,
+	}
 }
