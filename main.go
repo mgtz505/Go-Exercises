@@ -235,5 +235,61 @@ func main() {
 	//Exercise 2
 	m := map[string]person{
 		barb.firstName: barb,
+		barb.lastName:  barb,
 	}
+	fmt.Println(m)
+
+	for k, v := range m {
+		fmt.Println(k)
+		fmt.Println(v.firstName)
+	}
+	//Exercise 3
+	type vehicle struct {
+		doors int
+		color string
+	}
+
+	type truck struct {
+		vehicle
+		fourWheel bool
+	}
+
+	type sedan struct {
+		vehicle
+		luxury bool
+	}
+
+	t := truck{
+		vehicle: vehicle{
+			doors: 4,
+			color: "grey",
+		},
+		fourWheel: true,
+	}
+
+	s := sedan{
+		vehicle: vehicle{
+			doors: 4,
+			color: "red",
+		},
+		luxury: false,
+	}
+
+	fmt.Println(t, s)
+	fmt.Println(t.doors)
+	fmt.Println(s.doors)
+
+	//Exercise 4
+
+	d1 := struct {
+		breed string
+		age   int
+		size  int
+	}{
+		breed: "Shiba Inu",
+		age:   7,
+		size:  27,
+	}
+	fmt.Println(d1)
+
 }
